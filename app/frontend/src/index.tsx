@@ -5,11 +5,11 @@ import { initializeIcons } from "@fluentui/react";
 import { MsalProvider } from "@azure/msal-react";
 import { PublicClientApplication, EventType, AccountInfo } from "@azure/msal-browser";
 import { msalConfig, useLogin } from "./authConfig";
+import { Component as Ask } from './pages/ask/Ask'
 
 import "./index.css";
 
 import Layout from "./pages/layout/Layout";
-import Chat from "./pages/chat/Chat";
 
 var layout;
 if (useLogin) {
@@ -47,11 +47,7 @@ const router = createHashRouter([
         children: [
             {
                 index: true,
-                element: <Chat />
-            },
-            {
-                path: "qa",
-                lazy: () => import("./pages/ask/Ask")
+                element: <Ask />
             },
             {
                 path: "*",

@@ -1,0 +1,28 @@
+.citation {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14),
+  0 0 2px rgba(0, 0, 0, 0.12);
+  background-color: rgb(249, 249, 249);
+  padding: 1px 1rem;
+}
+
+.citationContext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.citationDate {
+  font-weight: bold;
+}
+
+.citationText {
+  border-left: 3px solid #333232;
+  padding-left: 0.5rem;
+}
+
+.citationDocumentName{
+  font-style: italic;
+}

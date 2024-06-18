@@ -68,6 +68,16 @@ export type ChatAppResponse = {
     session_state: any;
 };
 
+export interface MockCitation {
+    documentName: string;
+    date: Date;
+    relevantText: string;
+}
+
+export interface MockChatAppResponse extends ChatAppResponse {
+    citations: MockCitation[];
+}
+
 export type ChatAppRequestContext = {
     overrides?: ChatAppRequestOverrides;
 };

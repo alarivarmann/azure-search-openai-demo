@@ -1,5 +1,11 @@
+@import url('https://designsystem.suomi.fi/fonts/source-sans-pro.css');
+
 * {
     box-sizing: border-box;
+}
+
+:root {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
 html,
