@@ -1,27 +1,25 @@
 import {useEffect, useRef, useState} from "react";
-import {Checkbox, Panel, DefaultButton, Spinner, TextField, ICheckboxProps, ITextFieldProps} from "@fluentui/react";
+import {Checkbox, DefaultButton, ICheckboxProps, ITextFieldProps, Panel, Spinner, TextField} from "@fluentui/react";
 import {useId} from "@fluentui/react-hooks";
+import sourceData from './ask_source_data.json';
 
 import styles from "./Ask.module.css";
 
 import {
-  askApi,
   configApi,
   getSpeechApi,
-  ChatAppResponse,
-  ChatAppRequest,
+  GPT4VInput,
+  MockChatAppResponse,
   MockCitation,
   RetrievalMode,
-  VectorFieldOptions,
-  GPT4VInput, MockChatAppResponse
+  VectorFieldOptions
 } from "../../api";
 import {Answer, AnswerError} from "../../components/Answer";
 import {QuestionInput} from "../../components/QuestionInput";
-import {ExampleList} from "../../components/Example";
 import {AnalysisPanel, AnalysisPanelTabs} from "../../components/AnalysisPanel";
 import {HelpCallout} from "../../components/HelpCallout";
 import {SettingsButton} from "../../components/SettingsButton/SettingsButton";
-import {useLogin, getToken, isLoggedIn, requireAccessControl} from "../../authConfig";
+import {isLoggedIn, requireAccessControl, useLogin} from "../../authConfig";
 import {VectorSettings} from "../../components/VectorSettings";
 import {GPT4VSettings} from "../../components/GPT4VSettings";
 import {toolTipText} from "../../i18n/tooltips.js";
@@ -110,12 +108,12 @@ export function Component(): JSX.Element {
 
     // Return dummy data
     await new Promise((resolve) => {
-      setTimeout(resolve, Math.floor(Math.random() * 1200) + 300);
+      setTimeout(resolve, Math.floor(Math.random() * 1200) + 2300);
     });
 
     const response: MockChatAppResponse = {
       message: {
-        content: "91-vuotias nainen, jolla <1>sepelvaltimotauti</1> ja dieettihoitoinen <2>diabetes</2>. <3>Nilkka kuvattu 01/04 eikä murtumaa todettu</3>. Käyttää edelleen kävelykeppiä. Kipulääkitys ibuprofeeni 400 mg p.o. tarvittaessa. <4>Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla</4>. <5>Aivoinfarkti epäilty 02/23</5>, jolloin oikean puolen kehon voimat heikentyneet.",
+        content: "91-vuotias nainen tuotu päivystykseen rintakipujen, hengenahdistuksen, näön hämärtymisen ja lihasheikkouden vuoksi. Oireet ovat kestäneet muutaman kuukauden ja pahenevat rasituksessa, helpottuvat levossa. Potilaalla aiemmin diagnosoitu <2>sepelvaltimotauti</2> (01/2022) ja <3>tyypin 2 diabetes</3> (04/2022), molemmat hoidossa lääkityksellä ja elämäntapamuutoksilla. Potilas on leski ja asuu yksin kotihoidon käydessä kerran viikossa, poika lähin omainen. Potilas on eläkeläinen ja entinen opettaja. Käyttää kävelykeppiä tasapainon tukemiseksi, aiempia <11>kaatumisia</11> ja aivoinfarktiepäily helmikuussa 2023, jonka jälkeen oikean puolen kehon voimat heikentyneet. Kaatunut useita kertoja viimeisen kuukauden aikana, viimeksi 15.07, jolloin <11>vasen ranne murtui</11>. Nykyisin toipumassa, mutta kärsii edelleen <10>tasapaino-ongelmista</10> ja ahdistuksesta. <6>Fysioterapia jatkuu tasapainon parantamiseksi</6>, kipulääkitys tarvittaessa. Suunnitelmissa tarkempi <17>arviointi geriatrian poliklinikalla</17>.",
         role: "mr. robot"
       },
       delta: {
@@ -131,50 +129,40 @@ export function Component(): JSX.Element {
         }]
       },
       session_state: "TEST",
-      citations: [
-        {
-          documentName: "Jamppa Jokunen, Supersairaala Oy",
-          relevantText: "…oli syönyt 17 luumua minuutissa ja kouristeli vatsavaivoista…",
-          date: new Date(Date.now() - (Math.random() * 537370655000)),
-          index: 1,
-        },
-        {
-          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
-          relevantText: "…kurkussa useita kivihedelmän kiviä…",
-          date: new Date(Date.now() - (Math.random() * 537370655000)),
-          index: 2,
-        },
-        {
-          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
-          relevantText: "…kurkussa useita kivihedelmän kiviä…",
-          date: new Date(Date.now() - (Math.random() * 537370655000)),
-          index: 1,
-        },
-        {
-          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
-          relevantText: "…kurkussa useita kivihedelmän kiviä…",
-          date: new Date(Date.now() - (Math.random() * 537370655000)),
-          index: 3,
-        },
-        {
-          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
-          relevantText: "…kurkussa useita kivihedelmän kiviä…",
-          date: new Date(Date.now() - (Math.random() * 537370655000)),
-          index: 4,
-        },
-        {
-          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
-          relevantText: "…kurkussa useita kivihedelmän kiviä…",
-          date: new Date(Date.now() - (Math.random() * 537370655000)),
-          index: 5,
-        },
-        {
-          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
-          relevantText: "…kurkussa useita kivihedelmän kiviä…",
-          date: new Date(Date.now() - (Math.random() * 537370655000)),
-          index: 4,
-        }
-      ]
+      citations: [],
+    }
+
+    const citationIndexes = response.message.content.match(/(?<=<)\d+(?=>)/g)?.map((index) => Number.parseInt(index, 10));
+
+    if (citationIndexes) {
+      response.citations = sourceData
+        .filter((visit) => citationIndexes.includes(visit.visit_number))
+        .map((visit): MockCitation => {
+          // Kirjauksia olemassa
+          if (visit.tutkimukset?.length > 0) {
+            const [day, month, year] = visit.tutkimukset?.[0]?.kirjauksen_ajankohta.split('.').map((str) => Number.parseInt(str, 10));
+            const date = new Date(year, month - 1, day);
+
+            return ({
+              index: visit.visit_number,
+              date: date,
+              relevantText: visit.tutkimukset?.[0]?.lausunto ?? 'TUNTEMATON',
+              documentName: visit.tutkimukset?.[0]?.tutkimuksen_nimi ?? 'TUNTEMATON'
+            })
+          }
+
+          // Ei kirjauksia olemassa
+          const [day, month, year] = visit.pvm.split('.').map((str) => Number.parseInt(str, 10));
+          const date = new Date(year, month - 1, day);
+
+          return ({
+            index: visit.visit_number,
+            date: date,
+            relevantText: visit.käyntidiagnoosi ?? 'TUNTEMATON',
+            documentName: visit.tulosyy ?? 'TUNTEMATON'
+          })
+
+        });
     }
 
     setAnswer(response);
@@ -330,6 +318,7 @@ export function Component(): JSX.Element {
         {isLoading && <Spinner label="Luodaan anamneesia"/>}
         {!isLoading && answer && !error && (
           <div className={styles.askAnswerContainer}>
+            <h4 className={styles.h4Label}>Anamneesi (esitiedot)</h4>
             <Answer
               answer={answer}
               isStreaming={false}
@@ -341,12 +330,12 @@ export function Component(): JSX.Element {
               speechUrl={speechUrl}
             />
 
-            <h4>Citations</h4>
+            <h4 className={styles.h4Label}>Lähteet</h4>
 
             <div className={styles.mockCitationsContainer}>
               {answer.citations
                 .sort((a, b) => b.date.getTime() - a.date.getTime())
-                .sort((a,b) => a.index - b.index)
+                .sort((a, b) => a.index - b.index)
                 .map((citation) => <Citation
                   key={citation.date.getTime()}
                   citation={citation}/>

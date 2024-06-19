@@ -1,0 +1,241 @@
+[
+  {
+    "visit_number": 1,
+    "tulosyy": "Rintakipuja ja hengenahdistusta rasituksessa.",
+    "esitiedot": "91-vuotias nainen, jolla ei aiempia merkittäviä sairauksia. Rintakipua ja hengenahdistusta ollut muutaman kuukauden ajan rasituksessa, lievittänyt levossa. Ei aiempia sydänongelmia.",
+    "nykytila": "Yleiskunto hyvä, orientaatio normaali. Sydänäänet selkeät, ei sivuääniä. Keuhkoäänet puhtaat. Verenpaine 140/85, syke 78/min.",
+    "suunnitelma": "Sydämen ultraäänitutkimus ja rasitus-EKG. Aloitetaan ASA 100 mg p.o. päivittäin ja atorvastatiini 20 mg p.o. päivittäin. Kontrollikäynti kahden viikon kuluttua.",
+    "käyntidiagnoosi": "I20.9 Epäilty sepelvaltimotauti",
+    "tutkimukset": [
+      {
+        "tutkimuksen_nimi": "Sydämen ultraäänitutkimus",
+        "kirjauksen_ajankohta": "15.01.2022",
+        "tutkimusajankohta": "15.01.2022 10:00",
+        "tutkimuksen_tekijä": "Jari Laine",
+        "lausunnon_antaja": "Eeva Virtanen",
+        "lausuntoajankohta": "15.01.2022",
+        "lausunnon_tila": "Lopullinen lausunto",
+        "tutkimuksen_puoli": "Keskilinja",
+        "lausunto": "Sydämen rakenne normaali, lievä vasemman kammion hypertrofia. Ei merkittäviä ahtaumia."
+      },
+      {
+        "tutkimuksen_nimi": "Rasitus-EKG",
+        "kirjauksen_ajankohta": "17.01.2022",
+        "tutkimusajankohta": "17.01.2022 14:00",
+        "tutkimuksen_tekijä": "Mikko Nieminen",
+        "lausunnon_antaja": "Heli Heikkinen",
+        "lausuntoajankohta": "17.01.2022",
+        "lausunnon_tila": "Lopullinen lausunto",
+        "tutkimuksen_puoli": "Keskilinja",
+        "lausunto": "Rasituksessa ST-lasku 1 mm V5:ssä. Sepelvaltimotaudin mahdollisuus, suositetaan jatkotutkimuksia."
+      }
+    ]
+  },
+  {
+    "visit_number": 2,
+    "pvm": "17.01.2022",
+    "tulosyy": "Kontrollikäynti sydäntutkimusten jälkeen.",
+    "esitiedot": "91-vuotias nainen, jolla epäilty sepelvaltimotauti. Rintakipua ja hengenahdistusta rasituksessa. Sydämen ultraääni ja rasitus-EKG tehty, joissa havaittu lieviä poikkeavuuksia. Aloitettu ASA ja atorvastatiini.",
+    "nykytila": "Yleiskunto hyvä, potilas kertoo lääkityksen vähentäneen oireita. Sydänäänet edelleen selkeät, ei sivuääniä. Verenpaine 135/80, syke 75/min.",
+    "suunnitelma": "Jatketaan nykyistä lääkitystä. Seurantakäynti 6 kuukauden kuluttua. Jos oireet pahenevat, harkitaan sepelvaltimoiden varjoainekuvausta.",
+    "käyntidiagnoosi": "I25.9 Sepelvaltimotauti",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 3,
+    "tulosyy": "Kontrollikäynti, verensokerin tarkastus.",
+    "esitiedot": "91-vuotias nainen, jolla diagnosoitu sepelvaltimotauti 01/2022. Verensokeri ollut koholla viimeisissä mittauksissa. Potilas ylipainoinen, liikunta vähäistä.",
+    "nykytila": "Yleiskunto hyvä, potilas kertoo voivansa hyvin. Paino 82 kg, pituus 160 cm. Verenpaine 130/78, syke 72/min. Satunnaisverensokeri 8,9 mmol/l.",
+    "suunnitelma": "Aloitetaan metformiini 500 mg p.o. aamuisin. Ohjaus ravitsemusterapeutille ja liikunnan lisäämiseen. Kontrollikäynti 3 kuukauden kuluttua.",
+    "käyntidiagnoosi": "E11.9 Tyypin 2 diabetes",
+    "tutkimukset": [
+      {
+        "tutkimuksen_nimi": "Verensokerin mittaus",
+        "kirjauksen_ajankohta": "01.04.2022",
+        "tutkimusajankohta": "01.04.2022 09:00",
+        "tutkimuksen_tekijä": "Leena Mäkinen",
+        "lausunnon_antaja": "Leena Mäkinen",
+        "lausuntoajankohta": "01.04.2022",
+        "lausunnon_tila": "Lopullinen lausunto",
+        "tutkimuksen_puoli": "Keskilinja",
+        "lausunto": "Satunnaisverensokeri 8,9 mmol/l. Tyypin 2 diabeteksen diagnosointiin riittävä taso."
+      }
+    ]
+  },
+  {
+    "visit_number": 4,
+    "tulosyy": "Kontrollikäynti diabeteksen vuoksi.",
+    "esitiedot": "91-vuotias nainen, jolla diagnosoitu sepelvaltimotauti ja tyypin 2 diabetes. Aloitettu metformiini 500 mg p.o. aamuisin. Verensokeri ollut koholla. Ohjattu ravitsemusterapeutille ja liikunnan lisäämiseen.",
+    "nykytila": "Yleiskunto hyvä, potilas kertoo noudattaneensa ruokavalio- ja liikuntaohjeita. Paino 80 kg. Verenpaine 128/76, syke 70/min. Paastoverensokeri 7,5 mmol/l.",
+    "suunnitelma": "Jatketaan metformiinia. Seurataan verensokeria kotona. Kontrollikäynti 6 kuukauden kuluttua.",
+    "käyntidiagnoosi": "E11.9 Tyypin 2 diabetes, I25.9 Sepelvaltimotauti",
+    "tutkimukset": [
+      {
+        "tutkimuksen_nimi": "Paastoverensokerin mittaus",
+        "kirjauksen_ajankohta": "01.07.2022",
+        "tutkimusajankohta": "01.07.2022 08:30",
+        "tutkimuksen_tekijä": "Leena Mäkinen",
+        "lausunnon_antaja": "Leena Mäkinen",
+        "lausuntoajankohta": "01.07.2022",
+        "lausunnon_tila": "Lopullinen lausunto",
+        "tutkimuksen_puoli": "Keskilinja",
+        "lausunto": "Paastoverensokeri 7,5 mmol/l. Tyypin 2 diabetes edelleen hoidossa."
+      }
+    ]
+  },
+  {
+    "visit_number": 5,
+    "tulosyy": "Kontrollikäynti sepelvaltimotaudin ja diabeteksen vuoksi.",
+    "esitiedot": "91-vuotias nainen, jolla diagnosoitu sepelvaltimotauti 01/2022 ja tyypin 2 diabetes 04/2022. Käyttänyt metformiinia ja noudattanut ruokavalio- ja liikuntaohjeita. Verensokeri ja verenpaine seurannassa.",
+    "nykytila": "Yleiskunto hyvä. Potilas kertoo oireiden pysyneen hallinnassa. Paino 78 kg. Verenpaine 125/74, syke 68/min. HbA1c 6,8%.",
+    "suunnitelma": "Jatketaan nykyistä hoitoa ja seurantaa. Uusi kontrollikäynti 6 kuukauden kuluttua.",
+    "käyntidiagnoosi": "E11.9 Tyypin 2 diabetes, I25.9 Sepelvaltimotauti",
+    "tutkimukset": [
+      {
+        "tutkimuksen_nimi": "HbA1c-mittaus",
+        "kirjauksen_ajankohta": "01.01.2023",
+        "tutkimusajankohta": "01.01.2023 10:00",
+        "tutkimuksen_tekijä": "Tiina Salonen",
+        "lausunnon_antaja": "Tiina Salonen",
+        "lausuntoajankohta": "01.01.2023",
+        "lausunnon_tila": "Lopullinen lausunto",
+        "tutkimuksen_puoli": "Keskilinja",
+        "lausunto": "HbA1c 6,8%. Tyypin 2 diabetes hyvin hallinnassa."
+      }
+    ]
+  },
+  {
+    "visit_number": 6,
+    "tulosyy": "Potilas tullut päivystykseen kaaduttuaan. Oikean nilkan kipu ja turvotus.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Potilas kotiutunut omatoimiseksi ja pärjännyt kotona. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet. Potilas on käyttänyt kävelykeppiä tasapainon tukemiseksi. Ei muita kaatumisia viimeisen vuoden aikana.",
+    "nykytila": "Yleiskunto hyvä, orientaatio ajan ja paikan suhteen normaali. Oikea nilkka turvonnut, kosketusarka. Ei punoitusta. Liikkuvuus rajoittunut kivun vuoksi. Oikea puoli kehosta edelleen heikompi.",
+    "suunnitelma": "Oikean nilkan röntgenkuvaus murtuman poissulkemiseksi. Kipulääkitys: ibuprofeeni 400 mg p.o. tarvittaessa 1-3 kertaa päivässä. Kontrollikäynti terveyskeskuksessa 1 viikon kuluttua, ellei kipu ja turvotus vähene.",
+    "käyntidiagnoosi": "S93.4 Oikean nilkan nyrjähdys ja venähdys, epäilty",
+    "tutkimukset": [
+      {
+        "tutkimuksen_nimi": "Oikean nilkan röntgenkuvaus",
+        "kirjauksen_ajankohta": "01.04.2023",
+        "tutkimusajankohta": "01.04.2023 15:30",
+        "tutkimuksen_tekijä": "Sami Virtanen",
+        "lausunnon_antaja": "Matti Mäkinen",
+        "lausuntoajankohta": "01.04.2023",
+        "lausunnon_tila": "Lopullinen lausunto",
+        "tutkimuksen_puoli": "Oikea puoli",
+        "lausunto": "Ei merkkejä murtumasta. Oikea nilkka turvonnut, mutta luustorakenne normaali."
+      }
+    ]
+  },
+  {
+    "visit_number": 7,
+    "tulosyy": "Kontrollikäynti nilkkavamman vuoksi.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Nilkka kuvattu 01/04 eikä murtumaa todettu. Käyttää edelleen kävelykeppiä. Kipulääkitys ibuprofeeni 400 mg p.o. tarvittaessa. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet.",
+    "nykytila": "Yleiskunto hyvä. Oikean nilkan turvotus vähentynyt, kipua edelleen erityisesti iltaisin. Liikkuvuus parantunut, mutta nilkka edelleen jäykkä. Potilas pystyy kävelemään kotona ilman apuvälineitä lyhyitä matkoja.",
+    "suunnitelma": "Jatketaan kipulääkitystä tarvittaessa. Fysioterapiaan lähete nilkan liikkuvuuden ja tasapainon parantamiseksi. Uusi kontrollikäynti 4 viikon kuluttua.",
+    "käyntidiagnoosi": "S93.4 Oikean nilkan nyrjähdys ja venähdys, paranemassa",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 8,
+    "tulosyy": "Kontrollikäynti fysioterapian aloittamisen jälkeen.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Oikea nilkka nyrjähtänyt 01/04. Fysioterapia aloitettu 15/04. Käyttää kävelykeppiä ulkona liikkuessa. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet.",
+    "nykytila": "Yleiskunto hyvä. Potilas kokee, että fysioterapia on auttanut. Oikean nilkan liikkuvuus parantunut merkittävästi. Kipua ei enää levossa, lievää kipua kävellessä. Tasapaino parantunut.",
+    "suunnitelma": "Jatketaan fysioterapiaa kerran viikossa seuraavat 4 viikkoa. Kipulääkitys tarvittaessa. Seuranta 2 kuukauden kuluttua.",
+    "käyntidiagnoosi": "S93.4 Oikean nilkan nyrjähdys ja venähdys, toipumassa",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 9,
+    "tulosyy": "Fysioterapiakäynti, nilkan liikkuvuuden ja tasapainon parantaminen.",
+    "esitiedot": "91-vuotias nainen, jolla diagnosoitu sepelvaltimotauti ja dieettihoitoinen diabetes. Oikea nilkka nyrjähtänyt 01/04. Fysioterapia aloitettu 15/04. Käyttää kävelykeppiä ulkona liikkuessa.",
+    "nykytila": "Potilas saapunut fysioterapiaan. Oikea nilkka edelleen hieman jäykkä ja kipua erityisesti iltaisin. Liikkuvuus parantunut, mutta tasapaino vielä heikentynyt.",
+    "suunnitelma": "Ohjattu nilkan liikkuvuutta ja tasapainoa parantavia harjoitteita. Suositellaan fysioterapiaa kerran viikossa seuraavat 4 viikkoa.",
+    "käyntidiagnoosi": "S93.4 Oikean nilkan nyrjähdys ja venähdys, paranemassa",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 10,
+    "pvm": "4.6.2023",
+    "tulosyy": "Kontrollikäynti tasapaino-ongelmien vuoksi.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Nilkka nyrjähtänyt 01/04, paranemassa hyvin fysioterapian avulla. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet. Käyttää kävelykeppiä. Ei uusia kaatumisia.",
+    "nykytila": "Yleiskunto hyvä. Potilas kokee edelleen tasapaino-ongelmia, erityisesti noustessa istumasta seisomaan ja portaissa. Ei uusia kaatumisia. Fysioterapiasta apua nilkan liikkuvuuteen ja tasapainoon.",
+    "suunnitelma": "Jatketaan fysioterapiaa. Lisätään tasapainoharjoitteita kotona tehtäviksi. Uusi kontrolli 3 kuukauden kuluttua tai aiemmin tarvittaessa.",
+    "käyntidiagnoosi": "R26.81 Tasapainovaikeudet",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 11,
+    "tulosyy": "Uusi kaatuminen kotona. Vasen ranne kipeä ja turvonnut.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Nilkka nyrjähtänyt 01/04, toipumassa hyvin. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet. Potilas kaatunut kotona 15/07, tukikäsi petti noustessa tuolista.",
+    "nykytila": "Yleiskunto hyvä, mutta ahdistunut kaatumisen jälkeen. Vasen ranne turvonnut ja kosketusarka. Lievä punoitus. Ei muita vammoja.",
+    "suunnitelma": "Vasemman ranteen röntgenkuvaus murtuman poissulkemiseksi. Kipulääkitys: parasetamoli 500 mg 1-2 tablettia p.o. tarvittaessa 1-4 kertaa päivässä. Uusi kontrolli viikon kuluttua.",
+    "käyntidiagnoosi": "S62.5 Varren alaosan murtuma, epäilty",
+    "tutkimukset": [
+      {
+        "tutkimuksen_nimi": "Vasemman ranteen röntgenkuvaus",
+        "kirjauksen_ajankohta": "15.07.2023",
+        "tutkimusajankohta": "15.07.2023 14:45",
+        "tutkimuksen_tekijä": "Anna Lehtinen",
+        "lausunnon_antaja": "Pekka Korhonen",
+        "lausuntoajankohta": "15.07.2023",
+        "lausunnon_tila": "Lopullinen lausunto",
+        "tutkimuksen_puoli": "Vasen puoli",
+        "lausunto": "Vasemman ranteen murtuma todettu. Kipsi laitettava."
+      }
+    ]
+  },
+  {
+    "visit_number": 12,
+    "tulosyy": "Kontrollikäynti rannevamman vuoksi.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Kaatunut 15/07, jolloin vasen ranne kuvattu ja murtuma todettu. Kipsi laitettu 16/07. Nilkka nyrjähtänyt 01/04, toipumassa hyvin. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet. Kipulääkitys parasetamoli 500 mg tarvittaessa.",
+    "nykytila": "Yleiskunto hyvä. Ranne kipsissä, potilas kokee lievää kipua erityisesti yöllä. Ei turvotusta kipsin alla. Potilas noudattaa kipsin hoito-ohjeita hyvin.",
+    "suunnitelma": "Jatketaan kipulääkitystä tarvittaessa. Kipsin poistaminen 6 viikon kuluttua. Kontrollikäynti ortopedian poliklinikalla 2 viikon kuluttua.",
+    "käyntidiagnoosi": "S62.5 Varren alaosan murtuma",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 13,
+    "tulosyy": "Kontrollikäynti ortopedian poliklinikalla.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Vasen ranne murtunut kaatumisen seurauksena 15/07. Kipsi asetettu 16/07. Nilkka nyrjähtänyt 01/04, toipumassa hyvin. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet. Potilas kokee lievää kipua, mutta ei merkittäviä ongelmia kipsin kanssa.",
+    "nykytila": "Yleiskunto hyvä. Ranne edelleen kipsissä, ei merkittävää turvotusta tai punoitusta. Potilas kokee yhä lievää kipua, erityisesti yöllä.",
+    "suunnitelma": "Jatketaan nykyistä hoitoa. Kipsin poisto 4 viikon kuluttua. Seurantakäynti 2 viikkoa kipsin poistamisen jälkeen.",
+    "käyntidiagnoosi": "S62.5 Varren alaosan murtuma",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 14,
+    "tulosyy": "Kontrollikäynti kipsin poiston jälkeen.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Vasen ranne murtunut ja kipsattu 16/07. Kipsi poistettu 26/08. Nilkka nyrjähtänyt 01/04, toipumassa hyvin. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet. Potilas käyttänyt kävelykeppiä liikkuessa.",
+    "nykytila": "Yleiskunto hyvä. Vasen ranne jäykkä ja kipeä, erityisesti liikkeessä. Ei turvotusta tai punoitusta. Potilas kokee kipua edelleen.",
+    "suunnitelma": "Aloitetaan fysioterapia ranteen liikkuvuuden parantamiseksi. Kipulääkitys: ibuprofeeni 400 mg p.o. tarvittaessa 1-3 kertaa päivässä. Seurantakäynti 4 viikon kuluttua.",
+    "käyntidiagnoosi": "S62.5 Varren alaosan murtuma, toipumassa",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 15,
+    "tulosyy": "Fysioterapiakäynti, ranteen liikkuvuuden parantaminen.",
+    "esitiedot": "91-vuotias nainen, jolla diagnosoitu sepelvaltimotauti ja dieettihoitoinen diabetes. Vasen ranne murtunut ja kipsattu 16/07. Kipsi poistettu 26/08.",
+    "nykytila": "Potilas saapunut fysioterapiaan. Vasen ranne edelleen hieman jäykkä ja kipua erityisesti liikkeessä. Liikkuvuus parantunut, mutta tarvitsee lisää harjoitteita.",
+    "suunnitelma": "Ohjattu ranteen liikkuvuutta parantavia harjoitteita. Suositellaan fysioterapiaa kerran viikossa seuraavat 4 viikkoa.",
+    "käyntidiagnoosi": "S62.5 Varren alaosan murtuma, toipumassa",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 16,
+    "tulosyy": "Kontrollikäynti fysioterapian jälkeen.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Vasen ranne murtunut ja kipsattu 16/07. Kipsi poistettu 26/08. Fysioterapia aloitettu 01/09. Nilkka nyrjähtänyt 01/04, toipumassa hyvin. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet.",
+    "nykytila": "Yleiskunto hyvä. Vasen ranne liikkuvuudeltaan parantunut, mutta edelleen jäykkä. Kipua enää vähän, erityisesti rasituksen jälkeen. Potilas pystyy käyttämään kättä arkitoimissa.",
+    "suunnitelma": "Jatketaan fysioterapiaa. Kipulääkitys tarvittaessa. Seurantakäynti 3 kuukauden kuluttua.",
+    "käyntidiagnoosi": "S62.5 Varren alaosan murtuma, parantumassa",
+    "tutkimukset": []
+  },
+  {
+    "visit_number": 17,
+    "pvm": "19.10.2023",
+    "tulosyy": "Kontrollikäynti tasapaino-ongelmien ja kaatumisten vuoksi.",
+    "esitiedot": "91-vuotias nainen, jolla sepelvaltimotauti ja dieettihoitoinen diabetes. Vasen ranne murtunut ja kipsattu 16/07, toipumassa hyvin. Nilkka nyrjähtänyt 01/04, toipumassa hyvin. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet. Potilas kokee edelleen tasapaino-ongelmia ja on kaatunut useita kertoja viimeisen kuukauden aikana.",
+    "nykytila": "Yleiskunto kohtalainen. Potilas kokee ahdistusta kaatumisten vuoksi. Tasapaino heikentynyt, erityisesti iltaisin ja yöllä. Ei merkittäviä uusia vammoja kaatumisten seurauksena.",
+    "suunnitelma": "Jatketaan fysioterapiaa. Lähete geriatrian poliklinikalle tarkempaa arviointia varten. Kipulääkitys tarvittaessa. Seurantakäynti 1 kuukauden kuluttua.",
+    "käyntidiagnoosi": "R26.81 Tasapainovaikeudet, Z91.81 Kaatumisvaara",
+    "tutkimukset": []
+  }
+]

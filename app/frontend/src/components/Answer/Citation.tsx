@@ -1,5 +1,6 @@
 import styles from "./Citation.module.css";
 import {MockCitation} from "../../api";
+import sourceData from '../../pages/ask/ask_source_data.json';
 
 interface Props {
   citation: MockCitation;

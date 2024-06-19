@@ -49,33 +49,45 @@ export const Answer = ({
     .replace(/<4>(.*?)<\/4>/g, '<span class="highlight4">$1</span>')
     .replace(/<5>(.*?)<\/5>/g, '<span class="highlight5">$1</span>')
     .replace(/<6>(.*?)<\/6>/g, '<span class="highlight6">$1</span>')
-    .replace(/<7>(.*?)<\/7>/g, '<span class="highlight7">$1</span>');
+    .replace(/<7>(.*?)<\/7>/g, '<span class="highlight7">$1</span>')
+    .replace(/<8>(.*?)<\/8>/g, '<span class="highlight8">$1</span>')
+    .replace(/<9>(.*?)<\/9>/g, '<span class="highlight9">$1</span>')
+    .replace(/<10>(.*?)<\/10>/g, '<span class="highlight10">$1</span>')
+    .replace(/<11>(.*?)<\/11>/g, '<span class="highlight11">$1</span>')
+    .replace(/<12>(.*?)<\/12>/g, '<span class="highlight12">$1</span>')
+    .replace(/<13>(.*?)<\/13>/g, '<span class="highlight13">$1</span>')
+    .replace(/<14>(.*?)<\/14>/g, '<span class="highlight14">$1</span>')
+    .replace(/<15>(.*?)<\/15>/g, '<span class="highlight15">$1</span>')
+    .replace(/<16>(.*?)<\/16>/g, '<span class="highlight16">$1</span>')
+    .replace(/<17>(.*?)<\/17>/g, '<span class="highlight17">$1</span>')
+    .replace(/<18>(.*?)<\/18>/g, '<span class="highlight18">$1</span>');
+
 
   return (
     <Stack className={`${styles.answerContainer} ${isSelected && styles.selected}`} verticalAlign="space-between">
       <Stack.Item>
         <Stack horizontal horizontalAlign="space-between">
           <AnswerIcon/>
-          <div>
-            <IconButton
-              style={{color: "black"}}
-              iconProps={{iconName: "Lightbulb"}}
-              title="Show thought process"
-              ariaLabel="Show thought process"
-              onClick={() => onThoughtProcessClicked()}
-              disabled={!answer.context.thoughts?.length}
-            />
-            <IconButton
-              style={{color: "black"}}
-              iconProps={{iconName: "ClipboardList"}}
-              title="Show supporting content"
-              ariaLabel="Show supporting content"
-              onClick={() => onSupportingContentClicked()}
-              disabled={!answer.context.data_points}
-            />
-            {showSpeechOutputAzure && <SpeechOutputAzure url={speechUrl}/>}
-            {showSpeechOutputBrowser && <SpeechOutputBrowser answer={sanitizedAnswerHtml}/>}
-          </div>
+          {/*<div>*/}
+          {/*  <IconButton*/}
+          {/*    style={{color: "black"}}*/}
+          {/*    iconProps={{iconName: "Lightbulb"}}*/}
+          {/*    title="Show thought process"*/}
+          {/*    ariaLabel="Show thought process"*/}
+          {/*    onClick={() => onThoughtProcessClicked()}*/}
+          {/*    disabled={!answer.context.thoughts?.length}*/}
+          {/*  />*/}
+          {/*  <IconButton*/}
+          {/*    style={{color: "black"}}*/}
+          {/*    iconProps={{iconName: "ClipboardList"}}*/}
+          {/*    title="Show supporting content"*/}
+          {/*    ariaLabel="Show supporting content"*/}
+          {/*    onClick={() => onSupportingContentClicked()}*/}
+          {/*    disabled={!answer.context.data_points}*/}
+          {/*  />*/}
+          {/*  {showSpeechOutputAzure && <SpeechOutputAzure url={speechUrl}/>}*/}
+          {/*  {showSpeechOutputBrowser && <SpeechOutputBrowser answer={sanitizedAnswerHtml}/>}*/}
+          {/*</div>*/}
         </Stack>
       </Stack.Item>
 

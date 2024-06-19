@@ -85,3 +85,7 @@
     margin-bottom: 3rem;
     grid-auto-flow: row;
 }
+
+.h4Label {
+    margin-bottom: 0;
+}

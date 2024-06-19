@@ -42,29 +42,69 @@ html {
 
 
 .highlight1 {
-    background-color: #acf;
+    background-color: #FFB3BA;
 }
 
 .highlight2 {
-    background-color: #fac;
+    background-color: #FFDFBA;
 }
 
 .highlight3 {
-    background-color: #bde;
+    background-color: #CCFFCC;
 }
 
 .highlight4 {
-    background-color: #edb;
+    background-color: #BAFFC9;
 }
 
 .highlight5 {
-    background-color: #bed;
+    background-color: #FFCCCC;
 }
 
 .highlight6 {
-    background-color: #caf;
+    background-color: #DADDF0;
 }
 
 .highlight7 {
-    background-color: #cfa;
+    background-color: #FFC2E0;
+}
+
+.highlight8 {
+    background-color: #C2E0FF;
+}
+
+.highlight9 {
+    background-color: #E0FFC2;
+}
+
+.highlight10 {
+    background-color: #F0D9FF;
+}
+
+.highlight11 {
+    background-color: #FFB3E6;
+}
+
+.highlight12 {
+    background-color: #B3E6FF;
+}
+
+.highlight13 {
+    background-color: #E6FFB3;
+}
+
+.highlight14 {
+    background-color: #FFE6B3;
+}
+
+.highlight15 {
+    background-color: #BAE1FF;
+}
+
+.highlight16 {
+    background-color: #CCFFCC;
+}
+
+.highlight17 {
+    background-color: #FFFFBA;
 }

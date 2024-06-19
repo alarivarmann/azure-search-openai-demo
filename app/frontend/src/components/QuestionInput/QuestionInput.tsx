@@ -18,7 +18,7 @@ interface Props {
 }
 
 export const QuestionInput = ({onSend, disabled, placeholder, clearOnSend, initQuestion, showSpeechInput}: Props) => {
-  const [question, setQuestion] = useState<string>("Tänään kaatunut, kun oikea puoli kehosta mennyt voimattomaksi. Vasemman lonkan kipu.");
+  const [question, setQuestion] = useState<string>("Valittaa rintakipuja, hengästymistä, näön hämärtymistä, käsien ja jalkojen heikkoutta");
 
   useEffect(() => {
     initQuestion && setQuestion(initQuestion);
