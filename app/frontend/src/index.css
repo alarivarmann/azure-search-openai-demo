@@ -37,3 +37,34 @@ html {
 #root {
     height: 100%;
 }
+
+
+
+
+.highlight1 {
+    background-color: #acf;
+}
+
+.highlight2 {
+    background-color: #fac;
+}
+
+.highlight3 {
+    background-color: #bde;
+}
+
+.highlight4 {
+    background-color: #edb;
+}
+
+.highlight5 {
+    background-color: #bed;
+}
+
+.highlight6 {
+    background-color: #caf;
+}
+
+.highlight7 {
+    background-color: #cfa;
+}

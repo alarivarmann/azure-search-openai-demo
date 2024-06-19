@@ -72,6 +72,7 @@ export interface MockCitation {
     documentName: string;
     date: Date;
     relevantText: string;
+    index: number;
 }
 
 export interface MockChatAppResponse extends ChatAppResponse {

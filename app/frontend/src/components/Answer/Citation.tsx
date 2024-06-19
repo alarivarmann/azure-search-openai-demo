@@ -7,7 +7,7 @@ interface Props {
 
 export const Citation = ({citation}: Props) => {
   return <div className={styles.citation}>
-    <p className={styles.citationText}>{citation.relevantText}</p>
+    <p className={styles.citationText}><span className={`highlight${citation.index}`}>{citation.relevantText}</span></p>
 
     <div className={styles.citationContext}>
       <span className={styles.citationDocumentName}>— {citation.documentName}</span>

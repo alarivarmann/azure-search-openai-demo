@@ -115,7 +115,7 @@ export function Component(): JSX.Element {
 
     const response: MockChatAppResponse = {
       message: {
-        content: "91-vuotias nainen, jolla <1>sepelvaltimotauti</1> ja <2>dieettihoitoinen</2> diabetes. Nilkka kuvattu 01/04 eikä murtumaa todettu. Käyttää edelleen kävelykeppiä. Kipulääkitys ibuprofeeni 400 mg p.o. tarvittaessa. Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla. Aivoinfarkti epäilty 02/23, jolloin oikean puolen kehon voimat heikentyneet.",
+        content: "91-vuotias nainen, jolla <1>sepelvaltimotauti</1> ja dieettihoitoinen <2>diabetes</2>. <3>Nilkka kuvattu 01/04 eikä murtumaa todettu</3>. Käyttää edelleen kävelykeppiä. Kipulääkitys ibuprofeeni 400 mg p.o. tarvittaessa. <4>Aiemmin 11/03 basaalinen collummurtuma hoidettu DHS-ruuveilla</4>. <5>Aivoinfarkti epäilty 02/23</5>, jolloin oikean puolen kehon voimat heikentyneet.",
         role: "mr. robot"
       },
       delta: {
@@ -136,11 +136,43 @@ export function Component(): JSX.Element {
           documentName: "Jamppa Jokunen, Supersairaala Oy",
           relevantText: "…oli syönyt 17 luumua minuutissa ja kouristeli vatsavaivoista…",
           date: new Date(Date.now() - (Math.random() * 537370655000)),
+          index: 1,
         },
         {
           documentName: "Seppo Taalasma, Yksityissaaraala Oy",
           relevantText: "…kurkussa useita kivihedelmän kiviä…",
           date: new Date(Date.now() - (Math.random() * 537370655000)),
+          index: 2,
+        },
+        {
+          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
+          relevantText: "…kurkussa useita kivihedelmän kiviä…",
+          date: new Date(Date.now() - (Math.random() * 537370655000)),
+          index: 1,
+        },
+        {
+          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
+          relevantText: "…kurkussa useita kivihedelmän kiviä…",
+          date: new Date(Date.now() - (Math.random() * 537370655000)),
+          index: 3,
+        },
+        {
+          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
+          relevantText: "…kurkussa useita kivihedelmän kiviä…",
+          date: new Date(Date.now() - (Math.random() * 537370655000)),
+          index: 4,
+        },
+        {
+          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
+          relevantText: "…kurkussa useita kivihedelmän kiviä…",
+          date: new Date(Date.now() - (Math.random() * 537370655000)),
+          index: 5,
+        },
+        {
+          documentName: "Seppo Taalasma, Yksityissaaraala Oy",
+          relevantText: "…kurkussa useita kivihedelmän kiviä…",
+          date: new Date(Date.now() - (Math.random() * 537370655000)),
+          index: 4,
         }
       ]
     }
@@ -308,12 +340,18 @@ export function Component(): JSX.Element {
               showSpeechOutputBrowser={showSpeechOutputBrowser}
               speechUrl={speechUrl}
             />
-            {answer.citations
-              .sort((a, b) => b.date.getTime() - a.date.getTime())
-              .map((citation) => <Citation
-                key={citation.date.getTime()}
-                citation={citation}/>
-              )}
+
+            <h4>Citations</h4>
+
+            <div className={styles.mockCitationsContainer}>
+              {answer.citations
+                .sort((a, b) => b.date.getTime() - a.date.getTime())
+                .sort((a,b) => a.index - b.index)
+                .map((citation) => <Citation
+                  key={citation.date.getTime()}
+                  citation={citation}/>
+                )}
+            </div>
           </div>
         )}
         {error ? (
